@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #800020; /* Burdeos */
+    color: #FFFFFF; /* Texto blanco */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    background-color: #A52A2A; /* Más claro para hover */
+}
+
+/* Hero Section */
+#hero {
+    background-color: #A52A2A; /* Burdeos secundario */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#hero .btn {
+    background-color: #FFFFFF;
+    color: #A52A2A;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#hero .btn:hover {
+    background-color: #800020; /* Oscuro en hover */
+    color: #FFFFFF;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFFFF; /* Fondo blanco */
+    border: 1px solid #E5E5E5; /* Borde ligero */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: left;
+}
+
+#contacto h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #800020;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4B4B4B; /* Gris oscuro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333333;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #F5F5F5; /* Fondo gris claro */
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #800020; /* Burdeos */
+    box-shadow: 0px 0px 5px rgba(128, 0, 32, 0.5); /* Resalte */
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #800020;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #A52A2A; /* Más claro */
+}
+
+/* Footer */
+footer {
+    background-color: #4B4B4B; /* Gris oscuro */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
