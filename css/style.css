@@ -42,8 +42,8 @@ header::before {
 
 /* Logo dentro del encabezado */
 header .logo img {
-    max-width: 100px; /* Ajusta el tamaño del logo */
-    height: 55%; /* Mantiene la proporción */
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    height: 100%; /* Mantiene la proporción */
 }
 
 
