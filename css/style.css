@@ -38,7 +38,7 @@ header::before {
     border: 5px solid #8B0000; /* Borde del pseudo-elemento burdeos */
     z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
-
+ 
 
 /* Logo dentro del encabezado */
 header .logo img {
