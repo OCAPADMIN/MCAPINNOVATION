@@ -197,7 +197,7 @@ footer nav ul li a:hover {
 }
 /* Sección de Contacto */
 #contact {
-    padding: 50px 20px;
+    padding: 10px 20px;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -205,7 +205,7 @@ footer nav ul li a:hover {
 #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #00274c;
+    color: Black;
 }
 
 #contact p {
@@ -261,3 +261,14 @@ footer nav ul li a:hover {
     background-color: #00509e;
 }
 
+.language-selector {
+    float: right;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.language-selector a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}

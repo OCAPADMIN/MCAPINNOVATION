@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Si el idioma seleccionado es español -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,65 +13,95 @@
         <div class="logo">
             <img src="images/logo.jpeg" alt="MACP Logo">
         </div>
+
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" data-en="Home" data-es="Incio">Home</a></li>
+                <li><a href="#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
+                <li><a href="#products" data-en="Products" data-es="Productos">Products</a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
+
             </ul>
         </nav>
-    </header>
+
+ <!-- Selector de Idioma -->
+    <div class="language-selector">
+        <a href="?lang=en">English</a> | <a href="?lang=es">Español</a>
+    </div>
+</header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Innovation Beyond Machinery</h1>
-            <p>High-quality CNC machinery for industrial applications.</p>
-            <a href="#products" class="btn">Explore Products</a>
-        </div>
-    </section>
+    <<section id="home" class="hero">
+    <div class="hero-content">
+        <h1 data-en="Innovation Beyond Machinery" data-es="Innovación más allá de la maquinaria">Innovation Beyond Machinery</h1>
+        <p data-en="High-quality CNC machinery for industrial applications." data-es="Máquinas CNC de alta calidad para aplicaciones industriales.">High-quality CNC machinery for industrial applications.</p>
+        <a href="#products" class="btn" data-en="Explore Products" data-es="Explorar Productos">Explore Products</a>
+    </div>
+</section>
 
     <!-- Sección Sobre Nosotros -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We provide advanced solutions in CNC machinery with precision and reliability, tailored to industrial needs.</p>
-    </section>
+<section id="about">
+    <h2 data-en="About Us" data-es="Sobre Nosotros">About Us</h2>
+    <p data-en="We provide advanced solutions in CNC machinery with precision and reliability, tailored to industrial needs." data-es="Ofrecemos soluciones avanzadas en maquinaria CNC con precisión y fiabilidad, adaptadas a las necesidades industriales.">
+        We provide advanced solutions in CNC machinery with precision and reliability, tailored to industrial needs.
+    </p>
+</section>
 
-    <!-- Sección de Productos -->
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <h3>Product 1</h3>
-                <p>High-performance CNC machines for industrial use.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="product-card">
-                <h3>Product 2</h3>
-                <p>Precision engineering for demanding applications.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="product-card">
-                <h3>Product 3</h3>
-                <p>Reliable and efficient solutions for manufacturing.</p>
-                <a href="#">Learn More</a>
-            </div>
+<!-- Sección de Productos -->
+<section id="products">
+    <h2 data-en="Our Products" data-es="Nuestros Productos">Our Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3 data-en="Product 1" data-es="Producto 1">Product 1</h3>
+            <p data-en="High-performance CNC machines for industrial use." data-es="Máquinas CNC de alto rendimiento para uso industrial.">High-performance CNC machines for industrial use.</p>
+            <a href="#" data-en="Learn More" data-es="Saber Más">Learn More</a>
         </div>
-    </section>
+        <div class="product-card">
+            <h3 data-en="Product 2" data-es="Producto 2">Product 2</h3>
+            <p data-en="Precision engineering for demanding applications." data-es="Ingeniería de precisión para aplicaciones exigentes.">Precision engineering for demanding applications.</p>
+            <a href="#" data-en="Learn More" data-es="Saber Más">Learn More</a>
+        </div>
+        <div class="product-card">
+            <h3 data-en="Product 3" data-es="Producto 3">Product 3</h3>
+            <p data-en="Reliable and efficient solutions for manufacturing." data-es="Soluciones fiables y eficientes para la fabricación.">Reliable and efficient solutions for manufacturing.</p>
+            <a href="#" data-en="Learn More" data-es="Saber Más">Learn More</a>
+        </div>
+    </div>
+</section>
 
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 MACP Innovation Beyond Machinery SL. All Rights Reserved.</p>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home" data-en="Home" data-es="Incio">Home</a></li>
+                <li><a href="#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
+                <li><a href="#products" data-en="Products" data-es="Productos">Products</a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
             </ul>
         </nav>
     </footer>
+
+
+<!-- Script de JavaScript para cambiar el idioma -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Obtener el idioma desde la URL (si está disponible)
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'es'; // Default to English if no lang is specified
+
+        // Función para actualizar el contenido
+        function updateLanguage() {
+            const elements = document.querySelectorAll('[data-en], [data-es]');
+            elements.forEach(function (element) {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+        }
+
+        // Llamar a la función para actualizar el contenido según el idioma
+        updateLanguage();
+    });
+</script>
 
 </body>
 </html>
