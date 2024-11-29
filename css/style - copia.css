@@ -12,41 +12,18 @@ body {
 }
 
 /* Encabezado */
-/* Header con fondo blanco que ocupa todo el ancho */
 header {
-    background-color: white; /* Fondo blanco */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    padding: 10px 20px; /* Espaciado para el contenedor */
     display: flex;
-    justify-content: space-between; /* Espacia el logo y los enlaces */
-    align-items: center; /* Centra el contenido verticalmente */
-    border-top: 4px solid #8B0000; /* Línea superior burdeos */
-    border-bottom: 14px solid #333333;  /* Línea inferior gris*/
-    position: relative; /* Necesario para el pseudo-elemento */
-
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00274c;
+    color: white;
+    padding: 10px 20px;
 }
 
-/* Pseudo-elemento para redondear solo las esquinas internas */
-header::before {
-    content: '';
-    position: absolute;
-    top: -4px; /* Ajusta la posición */
-    left: -4px; /* Ajusta la posición */
-    right: -4px; /* Ajusta la posición */
-    bottom: -4px; /* Ajusta la posición */
-    border-radius: 20px; /* Redondea solo las esquinas internas */
-    border: 5px solid #8B0000; /* Borde del pseudo-elemento burdeos */
-    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
-}
-
-
-/* Logo dentro del encabezado */
 header .logo img {
-    max-width: 100px; /* Ajusta el tamaño del logo */
-    height: 55%; /* Mantiene la proporción */
+    max-height: 50px;
 }
-
-
 
 header nav ul {
     display: flex;
@@ -55,7 +32,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: black; /* Cambié el color a negro */
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -67,7 +44,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    height: 70vh;
+    height: 100vh;
     background-image: url('../images/portada.jpg'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
@@ -171,7 +148,7 @@ section {
 
 /* Pie de Página */
 footer {
-    background-color: #8B0000; /* Burdeos */
+    background-color: #00274c;
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -218,7 +195,7 @@ footer nav ul li a:hover {
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
-    background-color: #B0B0B0;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -243,7 +220,7 @@ footer nav ul li a:hover {
 .contact-form button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8B0000; /* Burdeos */
+    background-color: #00274c;
     color: white;
     border: none;
     border-radius: 4px;
@@ -255,4 +232,17 @@ footer nav ul li a:hover {
 .contact-form button:hover {
     background-color: #00509e;
 }
+/* Estilo para el contenedor blanco con el logo */
+#logo-container {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 100%;   /* Ocupa todo el ancho de la página */
+    background-color: white; /* Fondo blanco */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;     /* Centra el contenido verticalmente */
+}
 
+#logo-container img {
+    max-width: 80%; /* Ajusta el tamaño del logo, puedes cambiar este valor */
+    height: auto;   /* Mantiene la proporción del logo */
+}
