@@ -53,7 +53,6 @@ header nav ul {
     list-style: none;
     gap: 20px;
 }
-
 header nav ul li a {
     color: #333; /* Color inicial */
     text-decoration: none;
@@ -106,7 +105,52 @@ header nav ul li a:hover {
     background-color: #e63e00;
 }
 
-/* Sección de Contenido */
+/* Media Query para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    /* Cambiar el menú a una columna */
+    header nav ul {
+        flex-direction: column; /* Columna en lugar de fila */
+        background-color: white; /* Fondo blanco para el menú */
+        position: absolute; /* Lo posicionamos de forma absoluta */
+        top: 100%; /* Lo dejamos fuera de la vista inicialmente */
+        left: 0;
+        right: 0;
+        display: none; /* Escondemos el menú por defecto */
+        align-items: center; /* Centra los elementos dentro */
+        gap: 20px; /* Espacio entre los elementos */
+        padding: 20px 0; /* Espaciado alrededor */
+    }
+
+    /* Mostrar el menú cuando se activa */
+    header nav ul.show {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
+
+    /* Estilo para el botón del menú hamburguesa */
+    .menu-toggle {
+        display: block; /* Mostramos el botón de hamburguesa */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    /* Estilo de las líneas del menú hamburguesa */
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: #333;
+    }
+}
+
+/* Media Query para pantallas más grandes (mayores de 768px) */
+@media screen and (min-width: 769px) {
+    header nav ul {
+        display: flex; /* Mantenemos el menú en fila en pantallas grandes */
+    }
+}
 section {
     padding: 50px 20px;
     text-align: center;
