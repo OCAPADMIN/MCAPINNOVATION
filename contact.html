@@ -13,12 +13,21 @@
         <div class="logo">
             <img src="images/logo.jpeg" alt="MACP Logo">
         </div>
-        <nav>
-            <ul>
-		<li><a href="index.html" data-en="Home" data-es="Incio">Home</a></li>
+           
+<nav>
+        <!-- Botón del menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+                
+	<ul>
+                <li><a href="index.html" data-en="Home" data-es="Incio">Home</a></li>
                 <li><a href="index.html#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
                 <li><a href="index.html#products" data-en="Products" data-es="Productos">Products</a></li>
                 <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
+		
             </ul>
         </nav>
 <!-- Selector de Idioma -->
@@ -85,6 +94,14 @@
         // Llamar a la función para actualizar el contenido según el idioma
         updateLanguage();
     });
+// Obtener el botón y el menú
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('header nav ul');
+
+// Añadir el evento de clic al botón
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show'); // Toggle para mostrar/ocultar el menú
+});
 </script>
 
 

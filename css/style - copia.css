@@ -225,26 +225,6 @@ section {
     border-radius: 10px; /* Bordes redondeados para estética */
     color: white; /* Asegúrate de que el texto sea visible */
 }
-/* Ajustes para las tarjetas en pantallas móviles */
-@media screen and (max-width: 768px) {
-.carousel {
-    max-width: 95%;
-
-}
-   
- .product-card {
-        height: 700px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
-        padding: 10px; /* Espaciado ajustado para móviles */
-     width: 100%;   
- }
-
-    .product-content {
-        bottom: 5%; /* Ajusta la posición del texto para evitar que se corte */
-        font-size: 14px; /* Ajuste de tamaño de fuente para dispositivos móviles */
-	 background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
-
-    }
-}
 .product-content h3,
 .product-content p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mayor visibilidad */
