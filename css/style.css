@@ -111,19 +111,28 @@ header nav ul li a:hover {
 .hero-content .btn:hover {
     background-color: #e63e00;
 }
-
-.starrag-logo {
+.logo-container {
     position: absolute;
-    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
-    right: 10px; /* Ajusta la distancia desde el borde derecho */
-    width: 180px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto; /* Mantiene la proporción del logo */
-    opacity: 0.8; /* Opcional: Le da un poco de transparencia para integrar mejor el diseño */
+    top: 20px;  /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la parte izquierda */
+    padding: 10px;
 }
 
+/* Logo */
+.logo_starra {
+    height: auto;
+   bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    width: 200px; /* Ajusta el tamaño del logo según sea necesario */
+    opacity: 0.8; /* Opcional: Le da un poco de transparencia para integrar mejor el diseño */
+
+}
+
+
+
 @media (max-width: 768px) {
-    .starrag-logo {
-        width: 100px; /* Ajusta el tamaño para dispositivos móviles */
+.logo_starra{
+        width: 150px; /* Ajusta el tamaño para dispositivos móviles */
     }
 }
 /* Media Query para pantallas pequeñas (móviles) */
