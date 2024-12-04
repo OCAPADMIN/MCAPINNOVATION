@@ -82,6 +82,9 @@ header nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: white;
+    position: relative; /* Necesario para que los elementos dentro puedan usar position absolute */
+    padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
+
 }
 
 .hero-content h1 {
@@ -109,6 +112,20 @@ header nav ul li a:hover {
     background-color: #e63e00;
 }
 
+.starrag-logo {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    width: 180px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+    opacity: 0.8; /* Opcional: Le da un poco de transparencia para integrar mejor el diseño */
+}
+
+@media (max-width: 768px) {
+    .starrag-logo {
+        width: 100px; /* Ajusta el tamaño para dispositivos móviles */
+    }
+}
 /* Media Query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
 	header .logo img {
@@ -117,8 +134,9 @@ header nav ul li a:hover {
 	}
 
 header .idioma img {
-    max-width: 15px; /* Ajusta el tamaño del logo */
+    max-width: 18px; /* Ajusta el tamaño del logo */
     height: 100%; /* Mantiene la proporción */
+	float: right;
 }
 
     /* Cambiar el menú a una columna */
@@ -439,8 +457,9 @@ footer nav ul li a:hover {
 
 .language-selector {
     float: right;
-    padding: 10px;
+    padding: 1px;
     font-size: 6px;
+    margin-right: 1px; /* Ajusta el margen si necesitas separar del borde */
 }
 
 .language-selector a {

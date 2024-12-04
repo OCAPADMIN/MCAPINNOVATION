@@ -9,57 +9,58 @@
 <body>
 
   <!-- Encabezado -->
-    <header>
-        <div class="logo">
-            <img src="images/logo.jpeg" alt="MACP Logo">
-        </div>
-           
-<nav>
+ <header>
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="MACP Logo">
+    </div>
+
+    <nav>
         <!-- Botón del menú hamburguesa -->
         <button class="menu-toggle" aria-label="Toggle Menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-                
-	<ul>
-                <li><a href="index.html" data-en="Home" data-es="Incio">Home</a></li>
-                <li><a href="index.html#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
-                <li><a href="index.html#products" data-en="Products" data-es="Productos">Products</a></li>
-                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
-		
-            </ul>
-        </nav>
-<!-- Selector de Idioma -->
+        <ul>
+            <li><a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+            <li><a href="index.html#about" data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</a></li>
+            <li><a href="index.html#products" data-en="Products" data-es="Productos" data-pt="Produtos">Products</a></li>
+            <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Selector de Idioma -->
     <div class="language-selector">
-        <a href="?lang=en">English</a> | <a href="?lang=es">Español</a>
+        <div class="idioma"><a href="?lang=en"><img src="images/ingles.png" alt="English"></a></div>
+        <div class="idioma"><a href="?lang=es"><img src="images/espanol.png" alt="Español"></a></div>
+        <div class="idioma"><a href="?lang=pt"><img src="images/portugues.png" alt="Português"></a></div>
     </div>
-    </header>
+</header>
 
     <!-- Sección de Contacto -->
     <section id="contact">
-        <h2 data-en="Contact Us" data-es="Contactenos">Contact Us</h2>
-       <p data-en="We’d love to hear from you! Please fill out the form below or contact us directly at:" data-es="!Nos encantaría saber de usted! Por favor complete el siguiente formulario o contáctenos directamente a:">We’d love to hear from you! Please fill out the form below or contact us directly at:</p>
+        <h2 data-en="Contact Us" data-es="Contactenos" data-pt="Contate-nos">Contact Us</h2>
+       <p data-en="We’d love to hear from you! Please fill out the form below or contact us directly at:" data-es="!Nos encantaría saber de usted! Por favor complete el siguiente formulario o contáctenos directamente a:" data-pt="Adoraríamos ouvir de si! Por favor preencha o seguinte formulário ou contacte-nos diretamente para:">We’d love to hear from you! Please fill out the form below or contact us directly at:</p>
         <!-- Información de contacto -->
         <div class="contact-info">
-            <p ><strong data-en="Phone:" data-es="Telefóno:">Phone:</strong> <a href="tel:+34655555555" class="contact-link">655 555 555</a></p>
+            <p ><strong data-en="Phone:" data-es="Telefóno:" data-pt="Telefone:">Phone:</strong> <a href="tel:+34655555555" class="contact-link">655 555 555</a></p>
             <p><strong>Email:</strong> <a href="mailto:direccion@mcap.com" class="contact-link">direccion@mcap.com</a></p>
         </div>
  
         <form action="#" method="POST" class="contact-form">
-            <label for="name" data-en="Name:" data-es="Nombre" >Name:</label>
+            <label for="name" data-en="Name:" data-es="Nombre" data-pt="Nome" >Name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message" data-en="Message:" data-es="Mensaje:">Message:</label>
+            <label for="message" data-en="Message:" data-es="Mensaje:" data-pt="Mensagem:">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit"  data-en="Send Message:" data-es="Enviar Mensaje:">Send Message</button>
+            <button type="submit"  data-en="Send Message:" data-es="Enviar Mensaje:" data-pt="Enviar mensagem:">Send Message</button>
         </form>
- <p  data-en=" Or you can also contact us directly by WhatsApp:" data-es="O puede contactar directamente por WhatsApp:"> Or you can also contact us directly by WhatsApp:</p>
-        <a href="https://wa.me/34670412375" target="_blank" class="contact-link" data-en="Contact by WhatsApp" data-es="Contacte por WhatsApp" >Contact by WhatsApp</a>
+ <p  data-en=" Or you can also contact us directly by WhatsApp:" data-es="O puede contactar directamente por WhatsApp:" data-pt="Ou pode entrar em contacto diretamente pelo WhatsApp:"> Or you can also contact us directly by WhatsApp:</p>
+        <a href="https://wa.me/34670412375" target="_blank" class="contact-link" data-en="Contact by WhatsApp" data-es="Contacte por WhatsApp" data-pt="Contacto por WhatsApp" >Contact by WhatsApp</a>
     </section>
 
     <!-- Pie de Página -->
@@ -67,10 +68,10 @@
         <p>&copy; 2024 MACP Innovation Beyond Machinery SL. All Rights Reserved.</p>
         <nav>
             <ul>
-                <li><a href="index.html" data-en="Home" data-es="Incio">Home</a></li>
-                <li><a href="index.html#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
-                <li><a href="index.html#products" data-en="Products" data-es="Productos">Products</a></li>
-                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
+             <li><a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+            <li><a href="index.html#about" data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</a></li>
+            <li><a href="index.html#products" data-en="Products" data-es="Productos" data-pt="Produtos">Products</a></li>
+            <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
 
             </ul>
         </nav>
