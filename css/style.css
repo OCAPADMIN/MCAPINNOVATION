@@ -285,7 +285,7 @@ section {
 }
    
  .product-card {
-        height: 700px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
+        height: 600px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
         padding: 10px; /* Espaciado ajustado para móviles */
      width: 100%;   
  }
