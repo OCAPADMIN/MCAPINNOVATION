@@ -119,8 +119,6 @@ header nav ul li a:hover {
 header .idioma img {
     max-width: 15px; /* Ajusta el tamaño del logo */
     height: 100%; /* Mantiene la proporción */
-	 margin: 0 5px; /* Ajusta el margen horizontal */
-    display: inline-block; /* Asegura que los elementos estén en línea */
 }
 
     /* Cambiar el menú a una columna */
@@ -442,7 +440,7 @@ footer nav ul li a:hover {
 .language-selector {
     float: right;
     padding: 10px;
-    font-size: 0; /* Elimina el espacio extra */	
+    font-size: 6px;
 }
 
 .language-selector a {
