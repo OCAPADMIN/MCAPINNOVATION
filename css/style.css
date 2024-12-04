@@ -135,9 +135,8 @@ header nav ul li a:hover {
 .logo_starra{
         width: 150px; /* Ajusta el tamaño para dispositivos móviles */
     }
-	.hero {
-    height: 70vh;
- 
+hero {
+height: 72vh;}
 }
 /* Media Query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
