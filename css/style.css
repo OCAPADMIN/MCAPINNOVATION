@@ -82,7 +82,7 @@ header nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: white;
-    position: relative; /* Necesario para que los elementos dentro puedan usar position absolute */
+    
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
 }
@@ -90,6 +90,7 @@ header nav ul li a:hover {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+
 }
 
 .hero-content p {
@@ -113,16 +114,16 @@ header nav ul li a:hover {
 }
 .logo-container {
     position: absolute;
-    top: 20px;  /* Ajusta la distancia desde la parte superior */
-    right: 20px; /* Ajusta la distancia desde la parte izquierda */
+    top: 1px;  /* Ajusta la distancia desde la parte superior */
+    right: 1px; /* Ajusta la distancia desde la parte izquierda */
     padding: 10px;
 }
 
 /* Logo */
 .logo_starra {
     height: auto;
-   bottom: 10px; /* Ajusta la distancia desde el borde inferior */
-    right: 10px; /* Ajusta la distancia desde el borde derecho */
+   bottom: 1px; /* Ajusta la distancia desde el borde inferior */
+    right: 1px; /* Ajusta la distancia desde el borde derecho */
     width: 200px; /* Ajusta el tamaño del logo según sea necesario */
     opacity: 0.8; /* Opcional: Le da un poco de transparencia para integrar mejor el diseño */
 
@@ -182,7 +183,7 @@ header .idioma img {
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        background-color: #333;
+        background-color: #BD3B3B;
     }
 }
 
