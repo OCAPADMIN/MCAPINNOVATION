@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between; /* Espacia el logo y los enlaces */
     align-items: center; /* Centra el contenido verticalmente */
-    border-top: 4px solid #8B0000; /* Línea superior burdeos */
+    border-top: 4px solid #BD3B3B; /* Línea superior burdeos */
     border-bottom: 14px solid #333333;  /* Línea inferior gris*/
     position: relative; /* Necesario para el pseudo-elemento */
 
@@ -64,7 +64,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: white; /* Color de texto al pasar el ratón */
-    background-color: #8B0000; /* Fondo burdeos cuando se pasa el ratón */
+    background-color: #BD3B3B; /* Fondo burdeos cuando se pasa el ratón */
 }
 
 /* Hero Section */
@@ -93,7 +93,7 @@ header nav ul li a:hover {
 .hero-content .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #800000;
+    background-color: #BD3B3B;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -107,6 +107,11 @@ header nav ul li a:hover {
 
 /* Media Query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
+	header .logo img {
+	    max-width: 150px; /* Ajusta el tamaño del logo */
+	    height: 100%; /* Mantiene la proporción */
+	}
+
     /* Cambiar el menú a una columna */
     header nav ul {
         flex-direction: column; /* Columna en lugar de fila */
@@ -265,7 +270,7 @@ section {
 .product-content a {
     margin: 10px 0;
     font-size: 16px;
-    color: #8B0000; /* Burdeos */
+    color: #BD3B3B; /* Burdeos */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -323,7 +328,7 @@ section {
 
 /* Pie de Página */
 footer {
-    background-color: #8B0000;
+    background-color: #BD3B3B;
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -393,7 +398,7 @@ footer nav ul li a:hover {
     font-size: 1rem;
 }
 .contact-link {
-    color: #8B0000; /* Burdeos */
+    color: #BD3B3B; /* Burdeos */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -401,7 +406,7 @@ footer nav ul li a:hover {
 .contact-form button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8B0000; /* Burdeos */
+    background-color: #BD3B3B; /* Burdeos */
     color: white;
     border: none;
     border-radius: 4px;
