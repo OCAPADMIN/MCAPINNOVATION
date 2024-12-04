@@ -21,7 +21,7 @@ header {
     justify-content: space-between; /* Espacia el logo y los enlaces */
     align-items: center; /* Centra el contenido verticalmente */
     border-top: 4px solid #BD3B3B; /* Línea superior burdeos */
-    border-bottom: 14px solid #333333;  /* Línea inferior gris*/
+    border-bottom: 6px solid #333333;  /* Línea inferior gris*/
     position: relative; /* Necesario para el pseudo-elemento */
 
 }
