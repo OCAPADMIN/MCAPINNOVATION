@@ -135,6 +135,9 @@ header nav ul li a:hover {
 .logo_starra{
         width: 150px; /* Ajusta el tamaño para dispositivos móviles */
     }
+	.hero {
+    height: 75vh;
+ 
 }
 /* Media Query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
@@ -225,6 +228,7 @@ section {
     border-right: 30px solid transparent;
     border-bottom: 30px solid #333333; /* Color del triángulo (gris oscuro) */
 }
+
 #products {
     background-color: #ffffff;
 }
