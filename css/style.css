@@ -245,7 +245,7 @@ section {
 
     .product-content {
         bottom: 5%; /* Ajusta la posición del texto para evitar que se corte */
-        font-size: 14px; /* Ajuste de tamaño de fuente para dispositivos móviles */
+        font-size: 12px; /* Ajuste de tamaño de fuente para dispositivos móviles */
 	 background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
 
     }
