@@ -297,11 +297,11 @@ section {
 
     }
 
-.product-content p {
+   .product-content p {
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     color: white; /* Texto blanco para los párrafos */
-}
+   }
 
 
 /* Controles del carrusel */
