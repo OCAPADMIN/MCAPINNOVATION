@@ -437,7 +437,7 @@ footer nav ul li a:hover {
 
 /* Hero Section */
 .herocontacto {
-    height: 35vh;
+    height: 65vh;
     background-image: url('../images/contacto.png'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
