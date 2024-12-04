@@ -73,7 +73,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    height: 65vh;
+    height: 60vh;
     background-image: url('../images/portada.jpg'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
@@ -204,7 +204,7 @@ section {
     position: relative;
     background-color: #333333;
     color: white;
-    padding: 50px 20px;
+    padding: 45px 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
 }
@@ -404,7 +404,7 @@ footer nav ul li a:hover {
 }
 /* Sección de Contacto */
 #contact {
-    padding: 10px 20px;
+    padding: 25px 20px;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -421,52 +421,6 @@ footer nav ul li a:hover {
     color: #555;
 }
 
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #B0B0B0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-.contact-link {
-    color: #BD3B3B; /* Burdeos */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-.contact-form button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #BD3B3B; /* Burdeos */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-    background-color: #00509e;
-}
 
 .language-selector {
     float: right;
@@ -479,4 +433,34 @@ footer nav ul li a:hover {
     text-decoration: none;
     color: #333;
     margin: 0 5px;
+}
+
+/* Hero Section */
+.herocontacto {
+    height: 35vh;
+    background-image: url('../images/contacto.png'); /* Cambiar por la imagen correcta */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+    padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
+
+}
+
+.herocontacto-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+
+.herocontacto-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.contact-link {
+	color: #BD3B3B;
 }
