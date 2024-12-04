@@ -58,7 +58,7 @@ header nav ul {
     gap: 20px;
 }
 header nav ul li a {
-    color: #333; /* Color inicial */
+    color: #333333; /* Color inicial */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
@@ -81,7 +81,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
+    color: #333333;
     
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
@@ -96,6 +96,8 @@ header nav ul li a:hover {
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+	 color: black;
+   
 }
 
 .hero-content .btn {
@@ -445,7 +447,7 @@ footer nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
+    color: rgb(200, 200, 200);
     
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
@@ -460,6 +462,7 @@ footer nav ul li a:hover {
 .herocontacto-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+	color:white;
 }
 
 
