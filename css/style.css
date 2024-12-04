@@ -136,7 +136,7 @@ header nav ul li a:hover {
         width: 150px; /* Ajusta el tamaño para dispositivos móviles */
     }
 	.hero {
-    height: 75vh;
+    height: 70vh;
  
 }
 /* Media Query para pantallas pequeñas (móviles) */
