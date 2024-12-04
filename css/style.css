@@ -47,7 +47,7 @@ header .logo img {
 }
 
 header .idioma img {
-    max-width: 25px; /* Ajusta el tamaño del logo */
+    max-width: 20px; /* Ajusta el tamaño del logo */
     height: 100%; /* Mantiene la proporción */
 }
 
@@ -112,9 +112,16 @@ header nav ul li a:hover {
 /* Media Query para pantallas pequeñas (móviles) */
 @media screen and (max-width: 768px) {
 	header .logo img {
-	    max-width: 150px; /* Ajusta el tamaño del logo */
+	    max-width: 100px; /* Ajusta el tamaño del logo */
 	    height: 100%; /* Mantiene la proporción */
 	}
+
+header .idioma img {
+    max-width: 15px; /* Ajusta el tamaño del logo */
+    height: 100%; /* Mantiene la proporción */
+	 margin: 0 5px; /* Ajusta el margen horizontal */
+    display: inline-block; /* Asegura que los elementos estén en línea */
+}
 
     /* Cambiar el menú a una columna */
     header nav ul {
@@ -234,26 +241,6 @@ section {
     border-radius: 10px; /* Bordes redondeados para estética */
     color: white; /* Asegúrate de que el texto sea visible */
 }
-/* Ajustes para las tarjetas en pantallas móviles */
-@media screen and (max-width: 768px) {
-.carousel {
-    max-width: 95%;
-
-}
-   
- .product-card {
-        height: 700px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
-        padding: 10px; /* Espaciado ajustado para móviles */
-     width: 100%;   
- }
-
-    .product-content {
-        bottom: 5%; /* Ajusta la posición del texto para evitar que se corte */
-        font-size: 14px; /* Ajuste de tamaño de fuente para dispositivos móviles */
-	 background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
-
-    }
-}
 .product-content h3,
 .product-content p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para mayor visibilidad */
@@ -329,6 +316,35 @@ section {
     right: 10px;
 }
 
+
+/* Ajustes para las tarjetas en pantallas móviles */
+@media screen and (max-width: 768px) {
+.carousel {
+    max-width: 90%;
+
+}
+   
+ .product-card {
+        height: 700px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
+        padding: 10px; /* Espaciado ajustado para móviles */
+     width: 100%;   
+ }
+
+    .product-content {
+        bottom: 5%; /* Ajusta la posición del texto para evitar que se corte */
+        font-size: 8px; /* Ajuste de tamaño de fuente para dispositivos móviles */
+	 background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
+
+    }
+	
+	.product-content p {
+    margin: 0;
+    font-size: 12px;
+    color: white; /* Texto blanco para los párrafos */
+	}
+
+	
+}
 
 /* Pie de Página */
 footer {
@@ -426,7 +442,7 @@ footer nav ul li a:hover {
 .language-selector {
     float: right;
     padding: 10px;
-    font-size: 1rem;
+    font-size: 0; /* Elimina el espacio extra */	
 }
 
 .language-selector a {
