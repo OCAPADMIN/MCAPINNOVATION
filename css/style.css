@@ -46,6 +46,10 @@ header .logo img {
     height: 100%; /* Mantiene la proporción */
 }
 
+header .idioma img {
+    max-width: 25px; /* Ajusta el tamaño del logo */
+    height: 100%; /* Mantiene la proporción */
+}
 
 
 header nav ul {
@@ -230,6 +234,25 @@ section {
     border-radius: 10px; /* Bordes redondeados para estética */
     color: white; /* Asegúrate de que el texto sea visible */
 }
+/* Ajustes para las tarjetas en pantallas móviles */
+@media screen and (max-width: 768px) {
+.carousel {
+    max-width: 95%;
+
+}
+   
+ .product-card {
+        height: 700px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
+        padding: 10px; /* Espaciado ajustado para móviles */
+     width: 100%;   
+ }
+
+    .product-content {
+        bottom: 5%; /* Ajusta la posición del texto para evitar que se corte */
+        font-size: 14px; /* Ajuste de tamaño de fuente para dispositivos móviles */
+	 background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
+
+    }
 }
 .product-content h3,
 .product-content p {
@@ -276,33 +299,6 @@ section {
 .product-3 {
     background-image: url('../images/producto3.jpg');
 }
-
-/* Ajustes para las tarjetas en pantallas móviles */
-@media screen and (max-width: 768px) {
-.carousel {
-    max-width: 95%;
-
-}
-   
- .product-card {
-        height: 600px; /* Permite que la altura de la tarjeta sea dinámica en pantallas pequeñas */
-        padding: 10px; /* Espaciado ajustado para móviles */
-     width: 100%;   
- }
-
-    .product-content {
-        bottom: 5%; /* Ajusta la posición del texto para evitar que se corte */
-        font-size: 14px; /* Ajuste de tamaño de fuente para dispositivos móviles */
-	 background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
-
-    }
-
-   .product-content p {
-    margin: 0;
-    font-size: 12px;
-    color: white; /* Texto blanco para los párrafos */
-   }
-
 
 /* Controles del carrusel */
 .carousel-btn {

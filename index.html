@@ -10,51 +10,51 @@
 <body>
 
     <!-- Encabezado -->
-    <header>
-        <div class="logo">
-            <img src="images/logo.jpeg" alt="MACP Logo">
-        </div>
+  <header>
+    <div class="logo">
+        <img src="images/logo.jpeg" alt="MACP Logo">
+    </div>
 
-     
-<nav>
+    <nav>
         <!-- Botón del menú hamburguesa -->
         <button class="menu-toggle" aria-label="Toggle Menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
-                
-	<ul>
-                <li><a href="#home" data-en="Home" data-es="Incio">Home</a></li>
-                <li><a href="#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
-                <li><a href="#products" data-en="Products" data-es="Productos">Products</a></li>
-                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
-		
-            </ul>
-        </nav>
-	
-	
- <!-- Selector de Idioma -->
+        <ul>
+            <li><a href="#home" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+            <li><a href="#about" data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</a></li>
+            <li><a href="#products" data-en="Products" data-es="Productos" data-pt="Produtos">Products</a></li>
+            <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Selector de Idioma -->
     <div class="language-selector">
-        <a href="?lang=en">English</a> | <a href="?lang=es">Español</a>
+        <div class="idioma"><a href="?lang=en"><img src="images/ingles.png" alt="English"></a></div>
+        <div class="idioma"><a href="?lang=es"><img src="images/espanol.png" alt="Español"></a></div>
+        <div class="idioma"><a href="?lang=pt"><img src="images/portugues.png" alt="Português"></a></div>
     </div>
 </header>
 
-
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+<!-- Hero Section -->
+<section id="home" class="hero">
     <div class="hero-content">
-        <h1 data-en="Innovation Beyond Machinery" data-es="Innovación más allá de la maquinaria">Innovation Beyond Machinery</h1>
-        <p data-en="High-quality CNC machinery for industrial applications." data-es="Máquinas CNC de alta calidad para aplicaciones industriales.">High-quality CNC machinery for industrial applications.</p>
-        <a href="#products" class="btn" data-en="Explore Products" data-es="Explorar Productos">Explore Products</a>
+        <h1 data-en="Innovation Beyond Machinery" data-es="Innovación más allá de la maquinaria" data-pt="Inovação para além das máquinas">Innovation Beyond Machinery</h1>
+        <p data-en="High-quality CNC machinery for industrial applications." data-es="Máquinas CNC de alta calidad para aplicaciones industriales." data-pt="Máquinas CNC de alta qualidade para aplicações industriais.">
+            High-quality CNC machinery for industrial applications.
+        </p>
+        <a href="#products" class="btn" data-en="Explore Products" data-es="Explorar Productos" data-pt="Explorar Produtos">Explore Products</a>
     </div>
 </section>
 
     <!-- Sección Sobre Nosotros -->
 <section id="about">
-    <h2 data-en="About Us" data-es="Sobre Nosotros">About Us</h2>
-    <p data-en="We provide advanced solutions in CNC machinery with precision and reliability, tailored to industrial needs." data-es="Ofrecemos soluciones avanzadas en maquinaria CNC con precisión y fiabilidad, adaptadas a las necesidades industriales.">
+    <h2 data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</h2>
+    <p data-en="We provide advanced solutions in CNC machinery with precision and reliability, tailored to industrial needs."
+       data-es="Ofrecemos soluciones avanzadas en maquinaria CNC con precisión y fiabilidad, adaptadas a las necesidades industriales."
+       data-pt="Oferecemos soluções avançadas em máquinas CNC com precisão e confiabilidade, adaptadas às necessidades industriais.">
         We provide advanced solutions in CNC machinery with precision and reliability, tailored to industrial needs.
     </p>
 </section>
@@ -98,19 +98,18 @@ Las máquinas Dörries de Starrag es la solución definitiva para el fresado y t
     <button class="carousel-btn right-btn">❯</button>
 </section>
 
-    <!-- Pie de Página -->
-    <footer>
-        <p>&copy; 2024 MACP Innovation Beyond Machinery SL. All Rights Reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="#home" data-en="Home" data-es="Incio">Home</a></li>
-                <li><a href="#about" data-en="About Us" data-es="Sobre nosotros">About Us</a></li>
-                <li><a href="#products" data-en="Products" data-es="Productos">Products</a></li>
-                <li><a href="contact.html" data-en="Contact" data-es="Contacto">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>
-
+<!-- Pie de Página -->
+<footer>
+    <p>&copy; 2024 MACP Innovation Beyond Machinery SL. All Rights Reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="#home" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+            <li><a href="#about" data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</a></li>
+            <li><a href="#products" data-en="Products" data-es="Productos" data-pt="Produtos">Products</a></li>
+            <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
 
 <!-- Script de JavaScript para cambiar el idioma -->
 <script>
