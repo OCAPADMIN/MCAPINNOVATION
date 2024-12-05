@@ -73,56 +73,34 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    height: 65vh; /* Controla la altura de la sección */
-    width: 100%;
+    height: 65vh;
+    background-image: url('../images/portada.jpg'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black;
-     width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
-   font-weight: bold;
-    padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
-	z-index: 1; /* Establece un z-index más bajo que el del menú */
-}
-
-.hero-image {
-    height: 75%; /* Imagen ocupando 3/4 de la sección */
-    background-image: url('../images/portada.jpg'); /* Ruta de la imagen */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-	z-index: 1; /* Establece un z-index más bajo que el del menú */
-}
-
-.hero-content {
-    position: absolute;
-    bottom: 0;
-    width: 45%;
-	height: 50%;
-    background-color: rgba(189, 59, 59, 0.8); /* Fondo burdeos semitransparente */
     color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 1;
-	left: 5%
+     width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+   
+    font-weight: bold;
+    padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
+
 }
 
 .hero-content h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+   
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+	 background: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para contraste */
+   
+   
 }
 
 .hero-content .btn {
@@ -134,43 +112,12 @@ header nav ul li a:hover {
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s ease;
+ opacity: 1; /* Ajusta la opacidad entre 0 (completamente invisible) y 1 (completamente visible) */
+   
 }
 
 .hero-content .btn:hover {
     background-color: #e63e00;
-}
-
-/* Media Query para pantallas móviles */
-@media screen and (max-width: 768px) {
-    .hero {
-        height: 65vh; /* Ajustar la altura de la sección en móviles */
-    }
-
-    .hero-image {
-      height: 75%; /* Imagen ocupando 3/4 de la sección */
-   
-    }
-
-    .hero-content h1 {
-        font-size: 20px;
-    }
-
-    .hero-content p {
-        font-size: 10px;
-    }
-	
-.hero-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #BD3B3B;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-	 font-size: 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
 }
 .logo-container {
     position: absolute;
@@ -212,38 +159,32 @@ header .idioma img {
 }
 
     /* Cambiar el menú a una columna */
- header nav ul {
-    display: none; /* Menú oculto por defecto */
-    position: absolute;
-    top: 60px; /* Ajusta este valor dependiendo de la altura de tu encabezado */
-    left: 0;
-	text-align: center;
-    width: 100%;
-    
-    z-index: 1000; /* Asegura que esté encima de la imagen */
-	flex-direction: column; /* Columna en lugar de fila */
-    background-color: white; /* Fondo blanco para el menú */
-    top: 100%; /* Lo dejamos fuera de la vista inicialmente */
+    header nav ul {
+        flex-direction: column; /* Columna en lugar de fila */
+        background-color: white; /* Fondo blanco para el menú */
+        position: absolute; /* Lo posicionamos de forma absoluta */
+        top: 100%; /* Lo dejamos fuera de la vista inicialmente */
         left: 0;
-        right: 00;
+        right: 0;
         display: none; /* Escondemos el menú por defecto */
         align-items: center; /* Centra los elementos dentro */
         gap: 20px; /* Espacio entre los elementos */
         padding: 20px 0; /* Espaciado alrededor */
-}
+    }
 
-header nav ul.show {
-    display: block;
-	text-align: center
-    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
-}
+    /* Mostrar el menú cuando se activa */
+    header nav ul.show {
+        display: flex; /* Muestra el menú cuando está activo */
+    }
 
-/* Botón hamburguesa siempre visible */
-.menu-toggle {
-    position: relative;
-    z-index: 1001; /* El botón hamburguesa debe estar encima del menú */
-}
-  
+    /* Estilo para el botón del menú hamburguesa */
+    .menu-toggle {
+        display: block; /* Mostramos el botón de hamburguesa */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
 
     /* Estilo de las líneas del menú hamburguesa */
     .menu-toggle span {
@@ -252,6 +193,13 @@ header nav ul.show {
         height: 3px;
         margin: 5px auto;
         background-color: #BD3B3B;
+    }
+}
+
+/* Media Query para pantallas más grandes (mayores de 768px) */
+@media screen and (min-width: 769px) {
+    header nav ul {
+        display: flex; /* Mantenemos el menú en fila en pantallas grandes */
     }
 }
 section {
@@ -318,7 +266,6 @@ section {
     text-align: center;
     color: white;
     overflow: hidden;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-content {
@@ -465,7 +412,7 @@ footer nav ul li a:hover {
 /* Sección de Contacto */
 #contact {
     padding: 25px 20px;
-    background-color: white;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
@@ -482,16 +429,23 @@ footer nav ul li a:hover {
 }
 
 
-.contact-link {
-	color: #BD3B3B;
+.language-selector {
+    float: right;
+    padding: 1px;
+    font-size: 6px;
+    margin-right: 1px; /* Ajusta el margen si necesitas separar del borde */
 }
 
+.language-selector a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
 
 /* Hero Section */
 .herocontacto {
-    position: relative;
-    height: 65vh; /* Controla la altura de la sección */
-    width: 100%;
+    height: 65vh;
+    background-image: url('../images/contacto.png'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
     display: block;
@@ -502,44 +456,23 @@ footer nav ul li a:hover {
      width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
    font-weight: bold;
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
-	z-index: 1; /* Establece un z-index más bajo que el del menú */
-}
 
-.herocontacto-image {
-    height: 75%; /* Imagen ocupando 3/4 de la sección */
-    background-image:url('../images/contacto.png');/* Ruta de la imagen */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-	z-index: 1; /* Establece un z-index más bajo que el del menú */
-}
-
-.herocontacto-content {
-    position: absolute;
-    bottom: 0;
-    width: 45%;
-	height: 50%;
-    background-color: rgba(189, 59, 59, 0.8); /* Fondo burdeos semitransparente */
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 1;
-	left: 5%
 }
 
 .herocontacto-content h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
 .herocontacto-content p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+ background: rgba(200, 200, 200, 0.1); /* Fondo semitransparente para contraste */
+   
+    
 }
+
 
 .herocontacto-content .btn {
     display: inline-block;
@@ -551,40 +484,9 @@ footer nav ul li a:hover {
     border-radius: 5px;
     transition: background 0.3s ease;
 }
-
 .herocontacto-content .btn:hover {
     background-color: #e63e00;
 }
-
-/* Media Query para pantallas móviles */
-@media screen and (max-width: 768px) {
-    .herocontacto {
-        height: 65vh; /* Ajustar la altura de la sección en móviles */
-    }
-
-    .herocontacto-image {
-      height: 75%; /* Imagen ocupando 3/4 de la sección */
-   
-    }
-
-    .herocontacto-content h1 {
-        font-size: 20px;
-    }
-
-    .herocontacto-content p {
-        font-size: 10px;
-    }
-	
-.herocontacto-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #BD3B3B;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-	 font-size: 10px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
+.contact-link {
+	color: #BD3B3B;
 }
