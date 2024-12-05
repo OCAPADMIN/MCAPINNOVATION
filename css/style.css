@@ -77,12 +77,13 @@ header nav ul li a:hover {
     background-image: url('../images/portada.jpg'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    
+     width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+   
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
 }
@@ -446,12 +447,13 @@ footer nav ul li a:hover {
     background-image: url('../images/contacto.png'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    
+    color: black;
+     width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+   
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
 }
@@ -465,7 +467,8 @@ footer nav ul li a:hover {
 .herocontacto-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-	color:rgb(200, 200, 200);
+ background: rgba(200, 200, 200, 0.1); /* Fondo semitransparente para contraste */
+   
 }
 
 
