@@ -84,6 +84,7 @@ header nav ul li a:hover {
     color: white;
      width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
    
+    font-weight: bold;
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
 }
@@ -453,7 +454,7 @@ footer nav ul li a:hover {
     text-align: center;
     color: black;
      width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
-   
+   font-weight: bold;
     padding-bottom: 50px; /* Añade espacio para evitar que el logo tape el contenido */
 
 }
@@ -469,6 +470,7 @@ footer nav ul li a:hover {
     margin-bottom: 30px;
  background: rgba(200, 200, 200, 0.1); /* Fondo semitransparente para contraste */
    
+    
 }
 
 
