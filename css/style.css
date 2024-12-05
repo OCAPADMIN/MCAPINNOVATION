@@ -568,11 +568,11 @@ footer nav ul li a:hover {
     }
 
     .herocontacto-content h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .herocontacto-content p {
-        font-size: 10px;
+        font-size: 15px;
     }
 	
 .herocontacto-content .btn {
@@ -582,7 +582,7 @@ footer nav ul li a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
-	 font-size: 10px;
+	 font-size: 15px;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
