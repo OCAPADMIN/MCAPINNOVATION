@@ -108,6 +108,8 @@ header nav ul li a:hover {
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s ease;
+ opacity: 1; /* Ajusta la opacidad entre 0 (completamente invisible) y 1 (completamente visible) */
+   
 }
 
 .hero-content .btn:hover {
