@@ -61,9 +61,8 @@ header nav ul li a {
     color: #333333; /* Color inicial */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
     padding: 10px;
-    border-radius: 4px;
+     display: block;
 }
 
 header nav ul li a:hover {
@@ -152,11 +151,12 @@ header nav ul li a:hover {
     }
 
     .hero-content h1 {
-        font-size: 20px;
+        font-size: 150%;
+    
     }
 
     .hero-content p {
-        font-size: 10px;
+        font-size: 80%;
     }
 	
 .hero-content .btn {
@@ -166,7 +166,7 @@ header nav ul li a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
-	 font-size: 10px;
+	 font-size: 80%;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
@@ -239,11 +239,13 @@ header nav ul.show {
 }
 
 /* Botón hamburguesa siempre visible */
-.menu-toggle {
-    position: relative;
-    z-index: 1001; /* El botón hamburguesa debe estar encima del menú */
-}
-  
+ .menu-toggle {
+        display: block; /* Mostramos el botón de hamburguesa */
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
 
     /* Estilo de las líneas del menú hamburguesa */
     .menu-toggle span {
@@ -568,11 +570,11 @@ footer nav ul li a:hover {
     }
 
     .herocontacto-content h1 {
-        font-size: 20px;
+        font-size: 150%;
     }
 
     .herocontacto-content p {
-        font-size: 10px;
+        font-size: 80%;
     }
 	
 .herocontacto-content .btn {
@@ -582,9 +584,13 @@ footer nav ul li a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
-	 font-size: 10px;
+	 font-size: 80%;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 }
+
+
+
+
