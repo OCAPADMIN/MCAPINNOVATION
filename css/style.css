@@ -522,7 +522,7 @@ footer nav ul li a:hover {
 }
 
 .herocontacto-content {
-    position: absolute;
+ position: absolute;
     bottom: 0;
     width: 45%;
 	height: 50%;
@@ -535,7 +535,10 @@ footer nav ul li a:hover {
     justify-content: center;
     text-align: center;
     z-index: 1;
-	left: 5%
+	left: 5%;
+	overflow: hidden; /* Asegura que no haya desbordamiento visual */
+	 word-wrap: break-word; /* Divide palabras largas */
+    overflow-wrap: break-word;
 }
 
 .herocontacto-content h1 {
@@ -557,6 +560,8 @@ footer nav ul li a:hover {
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s ease;
+	  overflow: hidden; /* Asegura que no haya desbordamiento visual */
+ white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
 }
 
 .herocontacto-content .btn:hover {
@@ -565,8 +570,12 @@ footer nav ul li a:hover {
 
 /* Media Query para pantallas móviles */
 @media screen and (max-width: 768px) {
-    .herocontacto {
+     .herocontacto {
         height: 65vh; /* Ajustar la altura de la sección en móviles */
+    }
+	 .herocontacto-content {
+        max-width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+        padding: 10px; /* Reduce el padding */
     }
 
     .herocontacto-image {
@@ -575,23 +584,19 @@ footer nav ul li a:hover {
     }
 
     .herocontacto-content h1 {
-        font-size: 150%;
+        font-size: 100%;
+    
     }
 
     .herocontacto-content p {
-        font-size: 80%;
+        font-size: 70%;
     }
 	
 .herocontacto-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #BD3B3B;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-	 font-size: 80%;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+	
+	   font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+        padding: 8px 16px; /* Reduce el padding del botón */
+
 }
 
 }
