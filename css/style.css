@@ -142,7 +142,7 @@ header nav ul li a:hover {
 }
 
 .hero-content .btn:hover {
-    background-color: #e63e00;
+    background-color: red;
 }
 
 /* Media Query para pantallas móviles */
@@ -172,7 +172,7 @@ header nav ul li a:hover {
 .hero-content .btn {
 	
 	   font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
-        padding: 8px 16px; /* Reduce el padding del botón */
+        padding: 8px 1px; /* Reduce el padding del botón */
 
 }
 
@@ -565,7 +565,7 @@ footer nav ul li a:hover {
 }
 
 .herocontacto-content .btn:hover {
-    background-color: #e63e00;
+    background-color: red;
 }
 
 /* Media Query para pantallas móviles */
