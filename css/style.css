@@ -129,13 +129,14 @@ header nav ul li a:hover {
 
 .hero-content h1 {
     font-size: 2vw; /* Ajusta dinámicamente al ancho de la ventana */
-    margin-bottom: 10px;
+    margin-bottom: 10.5px;
 	
 }
 
 .hero-content p {
     font-size: 1.2vw; /* Escala relativo al viewport */
-    margin-bottom: 20px;
+    margin-bottom: 0.5px;
+	 line-height: 2;
 }
 
 .hero-content .btn {
@@ -149,6 +150,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     transition: background 0.3s ease;
 	  overflow: hidden; /* Asegura que no haya desbordamiento visual */
+	  margin-top: 0; /* Sin margen adicional encima del botón */
  white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
 }
 
@@ -165,7 +167,7 @@ header nav ul li a:hover {
     }
 
     .hero-content .btn {
-        font-size: 1rem;
+        font-size: 1.5vw;
         padding: 0.8em 1.5em;
     }
 }
@@ -585,14 +587,14 @@ footer nav ul li a:hover {
     display: inline-block;
     background-color: #BD3B3B;
     color: white;
-    text-decoration: none;
+	text-decoration: none;
     font-weight: bold;
 	 font-size: 1.2rem; /* Asegúrate de que el botón sea proporcional */
     padding: 1em 2em; /* Tamaño ajustable con unidades relativas */
     border-radius: 5px;
     transition: background 0.3s ease;
-	  overflow: hidden; /* Asegura que no haya desbordamiento visual */
- white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
+	overflow: hidden; /* Asegura que no haya desbordamiento visual */
+    white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
 }
 
 .herocontacto-content .btn:hover {
@@ -608,7 +610,7 @@ footer nav ul li a:hover {
     }
 
     .herocontacto-content .btn {
-        font-size: 1rem;
+        font-size: 1.5vw;
         padding: 0.8em 1.5em;
     }
 }
