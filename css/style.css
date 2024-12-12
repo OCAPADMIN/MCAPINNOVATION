@@ -124,12 +124,11 @@ header nav ul li a:hover {
     flex-direction: column;
     align-items: center; /* Centra el contenido horizontalmente */
     text-align: center; /* Alinea el texto */
-    gap: 0.1rem; /* Espaciado entre los elementos */
-   
+    
 }
 
 .hero-content h1 {
-    font-size: 2.5vw; /* Ajusta dinámicamente al ancho de la ventana */
+    font-size: 2vw; /* Ajusta dinámicamente al ancho de la ventana */
     margin-bottom: 10px;
 	
 }
@@ -158,11 +157,11 @@ header nav ul li a:hover {
 }
 @media (max-width: 1024px) and (min-width: 768px) {
     .hero-content h1 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .hero-content p {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .hero-content .btn {
@@ -573,7 +572,7 @@ footer nav ul li a:hover {
 }
 
 .herocontacto-content h1 {
-    font-size: 2.5vw; /* Ajusta dinámicamente al ancho de la ventana */
+    font-size: 2vw; /* Ajusta dinámicamente al ancho de la ventana */
     margin-bottom: 10px;
 }
 
@@ -601,11 +600,11 @@ footer nav ul li a:hover {
 }
 @media (max-width: 1024px) and (min-width: 768px) {
     .herocontacto-content h1 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .herocontacto-content p {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .herocontacto-content .btn {
