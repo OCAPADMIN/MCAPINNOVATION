@@ -129,13 +129,14 @@ header nav ul li a:hover {
 
 .hero-content h1 {
     font-size: 2vw; /* Ajusta dinámicamente al ancho de la ventana */
-    margin-bottom: 10px;
+    margin-bottom: 10.5px;
 	
 }
 
 .hero-content p {
     font-size: 1.2vw; /* Escala relativo al viewport */
-    margin-bottom: 20px;
+    margin-bottom: 0.5px;
+	 line-height: 2;
 }
 
 .hero-content .btn {
@@ -149,6 +150,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     transition: background 0.3s ease;
 	  overflow: hidden; /* Asegura que no haya desbordamiento visual */
+	  margin-top: 0; /* Sin margen adicional encima del botón */
  white-space: nowrap; /* Evita que el texto del botón se divida en varias líneas */
 }
 
