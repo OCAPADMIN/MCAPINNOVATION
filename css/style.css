@@ -372,6 +372,12 @@ section {
     margin: 0 0 10px 0;
     font-size: 34px;
     font-weight: bold;
+    color: red;
+}
+.product-content h4 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
     color: white;
 }
 
@@ -379,6 +385,7 @@ section {
     margin: 0;
     font-size: 16px;
     color: white; /* Texto blanco para los párrafos */
+	text-align: left;
 }
 
 .product-content a {
