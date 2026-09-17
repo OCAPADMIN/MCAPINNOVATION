@@ -1,240 +1,407 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!-- Si el idioma seleccionado es español -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UNIKA | Manualidades unicas hechas a mano</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Quicksand:wght@400;500;600&family=Shantell+Sans:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACP Innovation Beyond Machinery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
-<script>
-function toggleMenu(){
-    document.getElementById("menu").classList.toggle("active");
-}
-</script>
 <body>
-<header>
-  <div class="navbar">
 
+    <!-- Encabezado -->
+  <header>
     <div class="logo">
-      <img src="images/logo.png" alt="Logo unika">
-      <h1>Unika</h1>
+        <img src="images/logo.jpeg" alt="MACP Logo">
     </div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <nav id="menu">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-
-        <li class="dropdown">
-          <a href="#productos">Productos ▾</a>
-          <div class="submenu">
-            <a href="camisetas.html">Camisetas</a>
-            <a href="adornos.html">Adornos</a>
-            <a href="llaveros.html">Llaveros</a>
-          </div>
-        </li>
-
-        <li><a href="#sobre">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
+    <nav>
+       
+	   <!-- Botón del menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul>
+            <li><a href="#home" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+            <li><a href="#about" data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</a></li>
+            <li><a href="#products" data-en="Products" data-es="Productos" data-pt="Produtos">Products</a></li>
+            <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
     </nav>
 
-  </div>
-</header>
-<section class="hero" id="inicio">
-  <div>  
-  </br>
-  </br>
-  </br>
-    <h2>Manualidades únicas<br><span class="destacado-cursiva">hechas con creatividad</span></h2>
-
-    <!-- Separador con líneas y corazón -->
-    <div class="separador-corazon">
-      <span class="linea"></span>
-      <span class="corazon">♥</span>
-      <span class="linea"></span>
+    <!-- Selector de Idioma -->
+    <div class="language-selector">
+        <div class="idioma"><a href="?lang=en"><img src="images/ingles.png" alt="English"></a></div>
+        <div class="idioma"><a href="?lang=es"><img src="images/espanol.png" alt="Español"></a></div>
+        <div class="idioma"><a href="?lang=pt"><img src="images/portugues.png" alt="Português"></a></div>
     </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-image"></div> <!-- Imagen de fondo ocupando 3/4 de la sección -->
+    <div class="hero-content">
+        <h1 data-en="Innovation Beyond Machinery" data-es="Innovación más allá de la maquinaria" data-pt="Inovação para além das máquinas">Innovation Beyond Machinery</h1>
+        <p data-en="High-quality CNC machinery for industrial applications." data-es="Máquinas CNC de alta calidad para aplicaciones industriales." data-pt="Máquinas CNC de alta qualidade para aplicações industriais.">
+            High-quality CNC machinery for industrial applications.
+        </p>
+        <a href="#products" class="btn" data-en="Explore Products" data-es="Explorar Productos" data-pt="Explorar Produtos">Explore Products</a>
+    
+    </div>
+</section>
+ <!-- Sección de Contacto -->
+    <section id="contact">
+      </section>
+    <!-- Sección Sobre Nosotros -->
+<section id="about">
+<div class="logo-container">
+<a href="https://www.starrag.com" target="_blank" > <img  src="images/starrag_logo.svg" class="logo_starra" alt="Starrag Logo" > </a>
+        </div>
+ 
+ <h2 data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</h2>
+  <section class="intro-mcap">
+
+    <h2>MCAP Innovation: Tecnología de Precisión para la Industria</h2>
 
     <p>
-      Camisetas dibujadas con lejía, adornos decorativos, llaveros personalizados y muchas más creaciones hechas a mano con mucho cariño.
+        En <strong>MCAP Innovation</strong> acercamos a la industria española las soluciones
+        de fabricación más avanzadas del mercado. Somos especialistas en la distribución
+        de maquinaria y tecnología de alta precisión para empresas de los sectores
+        aeronáutico, automoción, energía, ingeniería y fabricación industrial.
     </p>
 
-    <!-- Botones del Hero -->
-    <div class="hero-botones">
-      <a href="#productos" class="boton-rosa">Ver productos ♥</a>
-      <a href="https://wa.me/34600000000" target="_blank" class="boton-verde">Contactar 💬</a>
+    <p>
+        Nuestro compromiso es ayudar a los fabricantes a mejorar sus procesos productivos
+        mediante equipos fiables, innovadores y de máxima calidad, ofreciendo un servicio
+        cercano y un asesoramiento técnico especializado en cada proyecto.
+    </p>
+
+    <h2>Starrag: Referente Mundial en Máquinas-Herramienta</h2>
+
+    <p>
+        <strong>Starrag</strong> es uno de los principales fabricantes internacionales de
+        máquinas-herramienta de alta precisión. Con una sólida trayectoria y origen suizo,
+        desarrolla soluciones de mecanizado para aplicaciones donde la precisión, la
+        productividad y la fiabilidad son fundamentales.
+    </p>
+
+    <p>
+        Sus tecnologías están presentes en industrias altamente exigentes, entre ellas:
+    </p>
+
+    <ul>
+        <li>Aeronáutica y aeroespacial.</li>
+        <li>Generación y sector energético.</li>
+        <li>Ingeniería y fabricación industrial.</li>
+        <li>Automoción.</li>
+        <li>Industria médica y de alta tecnología.</li>
+    </ul>
+
+    <h2>Distribuidor Exclusivo de Starrag en España</h2>
+
+    <p>
+        En <strong>MCAP Innovation</strong> somos el distribuidor exclusivo de
+        <strong>Starrag en España</strong>, con excepción de la división de torneado.
+        Esta colaboración nos permite ofrecer acceso directo a una de las gamas de
+        maquinaria más avanzadas del mercado, respaldada por un equipo técnico con amplia
+        experiencia.
+    </p>
+
+    <p>
+        Acompañamos a nuestros clientes durante todo el ciclo de vida de sus equipos,
+        proporcionando soluciones adaptadas a sus necesidades de producción.
+    </p>
+
+    <div class="servicios-starrag">
+        <h3>¿Qué ofrecemos?</h3>
+
+        <ul>
+            <li>
+                <strong>Centros de mecanizado de alta precisión</strong> para aplicaciones
+                de máxima exigencia.
+            </li>
+            <li>
+                <strong>Asistencia técnica y servicio postventa especializado</strong>,
+                garantizando la máxima disponibilidad de la maquinaria.
+            </li>
+            <li>
+                <strong>Formación y consultoría técnica</strong> para optimizar el rendimiento,
+                la productividad y el aprovechamiento de las soluciones Starrag.
+            </li>
+        </ul>
     </div>
-  </div>
-</section>
-<section id="productos">
-  <h2 class="titulo">Nuestros productos</h2>
-  
-  <div class="separador-corazon">
-    <span class="linea"></span>
-    <span class="corazon">♥</span>
-    <span class="linea"></span>
-  </div>
-  
-  <p class="subtitulo">Cada pieza es diferente porque está hecha a mano.</p>
-
-  <div class="productos-grid">
-
-    <!-- Tarjeta 1: Camisetas -->
-    <div class="card-producto">
-      <div class="card-info">
-      <h3>Camisetas</h3>
-        <p>Diseños únicos dibujados con lejía sobre tela.</p>
-        <a href="camisetas.html" class="btn-card">Ver camisetas</a>
-      </div>
-      <div class="card-img-wrapper">
-        <img src="images/camiseta.png" alt="Camisetas pintadas con lejía">
-      </div>
-    </div>
-
-    <!-- Tarjeta 2: Adornos -->
-    <div class="card-producto">
-      <div class="card-info">
-        <h3>Adornos</h3>
-        <p>Decoración artesanal para dar vida a cualquier rincón.</p>
-        <a href="adornos.html" class="btn-card">Ver adornos</a>
-      </div>
-      <div class="card-img-wrapper">
-        <img src="img/adorno1.jpg" alt="Adornos artesanales">
-      </div>
-    </div>
-
-    <!-- Tarjeta 3: Llaveros -->
-    <div class="card-producto">
-      <div class="card-info">
-        <h3>Llaveros</h3>
-        <p>Llaveros personalizados hechos a mano.</p>
-        <a href="llaveros.html" class="btn-card">Ver llaveros</a>
-      </div>
-      <div class="card-img-wrapper">
-        <img src="img/llavero1.jpg" alt="Llaveros personalizados">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-
-  <h2 class="titulo">Colecciones</h2>
-
-  <div class="productos">
-
-    <div class="card">
-      <img src="img/camiseta1.jpg" alt="Camisetas">
-      <h3>Camisetas</h3>
-      <p>Diseños originales realizados con la técnica de lejía sobre algodón. Cada camiseta es irrepetible.</p>
-      <a href="camisetas.html">Ver colección</a>
-    </div>
-
-    <div class="card">
-      <img src="img/adorno1.jpg" alt="Adornos">
-      <h3>Adornos</h3>
-      <p>Decoración artesanal para regalar o dar un toque especial a cualquier rincón de tu casa.</p>
-      <a href="adornos.html">Ver colección</a>
-    </div>
-
-    <div class="card">
-      <img src="img/llavero1.jpg" alt="Llaveros">
-      <h3>Llaveros</h3>
-      <p>Llaveros hechos a mano y totalmente personalizables con nombres, dibujos o colores.</p>
-      <a href="llaveros.html">Ver colección</a>
-    </div>
-
-  </div>
 
 </section>
+<section class="servicio-tecnico-mcap">
 
-<section id="sobre">
+    <h2>Servicio Técnico Especializado</h2>
 
-  <h2 class="titulo">¿Por qué Unika?</h2>
+    <p>
+        En <strong>MCAP Innovation</strong> ofrecemos mucho más que la distribución de maquinaria de alta precisión.
+        Ponemos a disposición de nuestros clientes un servicio técnico especializado que garantiza la máxima
+        disponibilidad, rendimiento y fiabilidad de cada equipo durante toda su vida útil.
+    </p>
 
-  <div class="sobre">
+    <p>
+        Nuestro equipo de ingenieros y técnicos cuenta con formación específica y el respaldo directo de
+        <strong>Starrag</strong>, lo que nos permite proporcionar un soporte ágil y altamente cualificado en cualquier fase del proyecto.
+    </p>
 
-    <div class="bloque">
-      <h4>🎨 Hecho a mano</h4>
-      <p>Cada pieza se diseña y se crea de manera artesanal </p>
+    <div class="servicios-grid">
+
+        <div class="servicio-card">
+            <h3>Instalación y puesta en marcha</h3>
+            <p>
+                Realizamos la instalación completa de los equipos, su configuración inicial y la validación de su funcionamiento
+                para que comiencen a producir con todas las garantías.
+            </p>
+        </div>
+
+        <div class="servicio-card">
+            <h3>Mantenimiento preventivo y correctivo</h3>
+            <p>
+                Diseñamos planes de mantenimiento que reducen paradas no programadas, prolongan la vida útil de la maquinaria
+                y mantienen un alto nivel de productividad.
+            </p>
+        </div>
+
+        <div class="servicio-card">
+            <h3>Diagnóstico y reparación</h3>
+            <p>
+                Actuamos con rapidez ante cualquier incidencia mediante diagnósticos avanzados, procedimientos especializados
+                y el uso de repuestos originales cuando son necesarios.
+            </p>
+        </div>
+
+        <div class="servicio-card">
+            <h3>Actualización y optimización de equipos</h3>
+            <p>
+                Asesoramos sobre mejoras técnicas, nuevas aplicaciones y actualizaciones que permitan aumentar el rendimiento
+                y adaptar la maquinaria a nuevas necesidades de fabricación.
+            </p>
+        </div>
+
     </div>
 
-    <div class="bloque">
-      <h4>🌿 Diseños únicos</h4>
-      <p>No hay dos camisetas iguales. Cada dibujo tiene personalidad propia. Cada pieza es <strong>Unika.</strong></p>
+    <p class="texto-destacado">
+        Nuestro objetivo es convertirnos en un socio técnico de confianza, acompañando a cada cliente para que sus equipos
+        Starrag mantengan el máximo nivel de precisión, disponibilidad y eficiencia.
+    </p>
+
+    <h2>El Valor Añadido de MCAP Innovation</h2>
+
+    <p>
+        Acompañamos a nuestros clientes durante todo el ciclo de vida de sus inversiones, ofreciendo un servicio integral
+        que va desde la definición de la solución más adecuada hasta el soporte técnico y la mejora continua de los equipos.
+    </p>
+
+    <div class="valor-grid">
+
+        <div class="valor-item">
+            <h3>Análisis de necesidades</h3>
+            <p>
+                Estudiamos cada proyecto para recomendar la solución de mecanizado que mejor se adapta a los objetivos de producción.
+            </p>
+        </div>
+
+        <div class="valor-item">
+            <h3>Integración en producción</h3>
+            <p>
+                Coordinamos la implantación de la maquinaria para conseguir una incorporación rápida y eficiente a la línea de fabricación.
+            </p>
+        </div>
+
+        <div class="valor-item">
+            <h3>Soporte continuo</h3>
+            <p>
+                Ofrecemos mantenimiento, asistencia técnica y asesoramiento para asegurar el mejor rendimiento de cada instalación.
+            </p>
+        </div>
+
     </div>
 
-    <div class="bloque">
-      <h4>💚 Personalización</h4>
-      <p>Podemos crear diseños exclusivos para regalos, familias o eventos.</p>
+    <h2>Experiencia en Proyectos Industriales</h2>
+
+    <p>
+        La experiencia acumulada por <strong>MCAP Innovation</strong> nos ha permitido colaborar con compañías de referencia
+        en los sectores de automoción, aeronáutica, energía e industria de alta precisión en España.
+    </p>
+
+    <div class="casos-exito">
+
+        <div class="caso">
+            <h3>Industria Aeronáutica</h3>
+            <p>
+                Implantación de soluciones de mecanizado que contribuyen a mejorar la precisión y optimizar los tiempos de fabricación
+                de componentes de alta complejidad.
+            </p>
+        </div>
+
+        <div class="caso">
+            <h3>Automoción</h3>
+            <p>
+                Proyectos orientados a incrementar la productividad y la calidad del mecanizado en piezas técnicas y componentes críticos.
+            </p>
+        </div>
+
+        <div class="caso">
+            <h3>Sector Energético</h3>
+            <p>
+                Soluciones adaptadas a procesos de fabricación donde la fiabilidad y la precisión son requisitos fundamentales.
+            </p>
+        </div>
+
     </div>
 
-  </div>
+    <h2>Compromiso con la Innovación Industrial</h2>
+
+    <p>
+        La innovación forma parte de nuestra manera de trabajar. Apostamos por incorporar tecnologías de mecanizado de última generación
+        que ayuden a nuestros clientes a afrontar nuevos retos de fabricación con mayor eficiencia y competitividad.
+    </p>
+
+    <p>
+        Junto a <strong>Starrag</strong>, seguimos acercando a la industria española soluciones capaces de responder a las exigencias
+        de los procesos de producción más avanzados.
+    </p>
 
 </section>
-
-<section id="contacto">
-
-  <div class="contacto">
-
-    <h2 class="titulo">¿Hablamos?</h2>
-
-    <p>Si quieres una camiseta personalizada o cualquier otra manualidad, escríbenos.</p>
-
-    <br>
-
-    <a class="boton" href="https://wa.me/34600000000" target="_blank">
-      WhatsApp
-    </a>
-
-  </div>
-
 </section>
 
+<!-- Sección de Productos -->
+<section id="products" class="carousel">
+    <h2  data-en="Our Products" data-es="Nuestros Productos">Our Products</h2>
+    <div class="carousel-container">
+        <div class="product-card product-1">
+            <div class="product-content">
+               <h3 data-en="Starrag" data-es="Starrag">Starrag</h3>
+			   <h4 data-en="Discover the precision and efficiency of Starrag machines"  data-pt="Descubra a precisão e eficiência das máquinas Starrag" data-es="Descubre la precisión y eficiencia de las máquinas Starrag"> cabecera</h4>
+                <p data-en="
+At MCAP, we are leaders in distributing high-performance CNC machinery, and Starrag is our flagship brand. Designed to exceed the most demanding standards, Starrag machines offer a unique combination of precision, reliability, and cutting-edge technology, making them ideal for a wide range of industries—from aerospace and automotive to energy and medical engineering.
+&nbsp;
+Why choose Starrag?
+&nbsp;
+Technological innovation: Equipped with the latest technologies, Starrag machines deliver superior performance and consistent results.&nbsp;
+Efficiency and savings: Optimize your production processes with solutions tailored to your specific needs.&nbsp;
+Unmatched quality: Built to last, Starrag machines ensure stable operation even in the most challenging environments.&nbsp;
+Specialized support: With us, you’ll not only get a high-quality machine but also dedicated after-sales service to maximize your investment.&nbsp;
+Transform your production with Starrag. Contact us today and discover how our CNC solutions can take your business to the next level" 
+				  data-es="
+En MCAP, somos líderes en la distribución de maquinaria CNC de alto rendimiento, y Starrag es nuestra marca insignia. Diseñadas para superar los estándares más exigentes, las máquinas Starrag ofrecen una combinación única de precisión, fiabilidad y tecnología de vanguardia, ideales para una amplia gama de industrias: desde la aeroespacial y la automotriz, hasta la energía y la ingeniería médica.
+&nbsp;
+¿Por qué elegir Starrag?
+&nbsp;
+&lt;strong&gt;Innovación tecnológica&lt;/strong&gt;: Equipadas con las últimas tecnologías, las máquinas Starrag garantizan un rendimiento superior y resultados consistentes.&nbsp;
+Eficiencia y ahorro: Optimiza tus procesos de producción con soluciones adaptadas a tus necesidades específicas.&nbsp;
+Calidad insuperable: Construidas para durar, las máquinas Starrag aseguran un funcionamiento estable incluso en los entornos más desafiantes.&nbsp;
+Soporte especializado: Con nosotros, no solo obtendrás una máquina de calidad, sino también un servicio postventa dedicado a maximizar tu inversión.&nbsp;
+Transforma tu producción con Starrag. Contáctanos hoy y descubre cómo nuestras soluciones CNC pueden llevar tu negocio al siguiente nivel.&nbsp;"
+                    data-pt="
+Na MCAP, somos líderes na distribuição de máquinas CNC de alto desempenho, e a Starrag é nossa marca principal. Projetadas para superar os padrões mais exigentes, as máquinas Starrag oferecem uma combinação única de precisão, confiabilidade e tecnologia de ponta, ideais para uma ampla gama de indústrias: desde aeroespacial e automotiva até energia e engenharia médica.
+
+Por que escolher a Starrag?
+
+Inovação tecnológica: Equipadas com as tecnologias mais avançadas, as máquinas Starrag garantem desempenho superior e resultados consistentes.
+Eficiência e economia: Otimize seus processos de produção com soluções adaptadas às suas necessidades específicas.
+Qualidade incomparável: Construídas para durar, as máquinas Starrag asseguram operação estável mesmo nos ambientes mais desafiadores.
+Suporte especializado: Conosco, você não terá apenas uma máquina de alta qualidade, mas também um serviço pós-venda dedicado a maximizar seu investimento.
+Transforme sua produção com a Starrag. Entre em contato conosco hoje mesmo e descubra como nossas soluções CNC podem levar sua empresa para o próximo nível.">
+                </p>
+                           <a href="https://www.starrag.com" data-en="Learn More  " data-es="Más Información  ">Learn More</a>  <a href="https://www.starrag.com" target="_blank"> <img  src="images/starrag_logo.svg" alt="Starrag Logo"> </a>
+            </div>
+        </div>
+        <div class="product-card product-2">
+            <div class="product-content">
+                <h3>Heckert</h3>
+				
+                <p data-en="Optimize your production with Heckert machines from Starrag
+					Starrag’s Heckert machines stand out for their precision and efficiency. Designed for modern industries, these machines provide high precision in machining complex parts, ideal for applications in automotive, aerospace, and other sectors. With a robust design and cutting-edge technology, Heckert machines guarantee superior results, process efficiency, and production flexibility. We offer comprehensive support from Starrag to ensure maximum performance and continuous technical support." 
+				   data-es="Optimiza tu producción con las máquinas Heckert de Starrag 
+				   Las máquinas Heckert de Starrag destacan por su precisión y eficiencia. Diseñadas para la industria moderna, estas máquinas proporcionan alta precisión en el mecanizado de piezas complejas, ideal para aplicaciones en automoción, aeroespacial y otros sectores. Con un diseño robusto y tecnología de vanguardia, las Heckert garantizan resultados superiores, eficiencia de proceso y flexibilidad en la producción. Contamos con el soporte integral de Starrag para asegurar el máximo rendimiento y soporte técnico continuo."
+                   data-pt="Aproveite sua produção com as máquinas Heckert da Starrag
+				   As máquinas Heckert da Starrag se destacam por sua precisão e eficiência. Projetadas para as indústrias modernas, essas máquinas oferecem alta precisão na usinagem de peças complexas, ideais para aplicações em automóveis, aeroespacial e outros setores. Com um design robusto e tecnologia de ponta, as máquinas Heckert garantem resultados superiores, eficiência de processo e flexibilidade na produção. Oferecemos suporte completo da Starrag para garantir o desempenho máximo e suporte técnico contínuo. ">
+                </p>
+                <a href="https://www.starrag.com/en-us/product-range/7" data-en="Learn More  " data-es="Más Información  ">Learn More</a>  <a href="https://www.starrag.com" target="_blank"> <img src="images/starrag_logo.svg" alt="Starrag Logo"> </a>
+            </div>
+        </div>
+        <div class="product-card product-3">
+            <div class="product-content">
+                 <h3>Dörries </h3>
+                <p data-en="Starrag Dörries machines are the definitive solution for milling and turning large parts and highly demanding components. With a robust and flexible design, these machines are perfect for sectors such as aerospace, energy and heavy machinery. Its ability to work with large pieces and its cutting-edge technology ensure efficient and high-quality production. In addition, Dörries machines offer automation and customization options, allowing you to maximize productivity and meet the highest standards of precision and reliability. A trusted choice for the most demanding operations!" data-es="
+Las máquinas Dörries de Starrag es la solución definitiva para el fresado y torneado de piezas grandes y componentes de alta exigencia. Con un diseño robusto y flexible, estas máquinas son perfectas para sectores como aeroespacial, energético y maquinaria pesada. Su capacidad para trabajar con piezas de gran tamaño y su tecnología de vanguardia aseguran producción eficiente y de alta calidad. Además, las máquinas Dörries ofrecen opciones de automatización y personalización, lo que permite maximizar la productividad y cumplir con los más altos estándares de precisión y fiabilidad. ¡Una elección de confianza para las operaciones más exigentes!">
+
+                </p>
+                <a href="https://www.starrag.com/product-range/5" data-en="Learn More  " data-es="Más Información  ">Learn More</a>  <a href="https://www.starrag.com" target="_blank"> <img  src="images/starrag_logo.svg" alt="Starrag Logo"> </a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-btn left-btn">❮</button>
+    <button class="carousel-btn right-btn">❯</button>
+</section>
+
+<!-- Pie de Página -->
 <footer>
-
-  <div class="footer">
-
-    <div>
-      <h3>Unika</h3>
-      <p>Manualidades hechas a mano con creatividad, color y unícas.</p>
-    </div>
-
-    <div>
-      <h3>Información legal</h3>
-      <a href="aviso-legal.html">Aviso Legal</a>
-      <a href="privacidad.html">Política de Privacidad</a>
-      <a href="cookies.html">Política de Cookies</a>
-      <a href="rgpd.html">Protección de Datos (RGPD)</a>
-    </div>
-
-    <div>
-      <h3>Redes sociales</h3>
-      <a href="https://linkedin.com">LinkedIn</a>
-      <a href="https://wa.me/34600000000">WhatsApp</a>
-      <a href="mailto:unika@gmail.es">unika@gmail.es</a>
-    </div>
-
-  </div>
-
-  <p class="copyright">
-    © 2026 unika. Todos los derechos reservados.
-    Cumplimiento del Reglamento General de Protección de Datos (RGPD) y Ley de Servicios de la Sociedad de la Información (LSSI-CE).
-  </p>
-
+    <p>&copy; 2024 MACP Innovation Beyond Machinery SL. All Rights Reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="#home" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+            <li><a href="#about" data-en="About Us" data-es="Sobre Nosotros" data-pt="Sobre Nós">About Us</a></li>
+            <li><a href="#products" data-en="Products" data-es="Productos" data-pt="Produtos">Products</a></li>
+            <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
+    </nav>
 </footer>
 
+<!-- Script de JavaScript para cambiar el idioma -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselContainer = document.querySelector('.carousel-container');
+    const leftBtn = document.querySelector('.left-btn');
+    const rightBtn = document.querySelector('.right-btn');
+
+    let currentIndex = 0;
+    const totalItems = document.querySelectorAll('.product-card').length;
+
+    const updateCarousel = () => {
+        carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    leftBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Circularidad hacia la izquierda
+        updateCarousel();
+    });
+
+    rightBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalItems; // Circularidad hacia la derecha
+        updateCarousel();
+    });
+    // Obtener el idioma desde la URL (si está disponible)
+        const urlParams = new URLSearchParams(window.location.search);
+        const lang = urlParams.get('lang') || 'es'; // Default to English if no lang is specified
+
+        // Función para actualizar el contenido
+        function updateLanguage() {
+            const elements = document.querySelectorAll('[data-en], [data-es]');
+            elements.forEach(function (element) {
+                element.textContent = element.getAttribute(`data-${lang}`);
+            });
+        }
+
+        // Llamar a la función para actualizar el contenido según el idioma
+        updateLanguage();
+    });
+// Obtener el botón y el menú
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('header nav ul');
+
+// Añadir el evento de clic al botón
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show'); // Toggle para mostrar/ocultar el menú
+});
+</script>
+
 </body>
-<a href="https://wa.me/346XXXXXXXX"
-   class="whatsapp"
-   target="_blank">
-   💬
-</a>
 </html>
